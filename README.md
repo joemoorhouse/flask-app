@@ -1,2 +1,1 @@
-# flask-app
-Testing React app deployment on OpenShift
+# devfile-sample-python-basic
