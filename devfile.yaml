@@ -27,6 +27,12 @@ components:
       endpoints:
         - name: web
           targetPort: 8080
+      env:
+        - name: TEST_SECRET_USERNAME_ENV_VAR
+          valueFrom:
+            secretKeyRef:
+              name: physrisk-hazard
+              key: BUCKET_NAME
 commands:
   - id: pip-install-requirements
     exec:
