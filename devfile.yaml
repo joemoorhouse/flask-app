@@ -29,7 +29,6 @@ components:
           targetPort: 8080
       env:
         - name: BUCKET_NAME
-          value: 
           valueFrom:
             secretKeyRef:
               name: physrisk-hazard
